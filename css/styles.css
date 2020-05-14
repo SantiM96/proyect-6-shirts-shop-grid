@@ -1,0 +1,17 @@
+:root {
+    --mainfont: 'Staatliches', cursive;
+
+    --primary: #9c27b0;
+    --darkprimary: #89119d;
+    --secondary: #ffce00;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primary);
+}
