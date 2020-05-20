@@ -167,7 +167,43 @@ main h1 {
 }
 
 /** Product **/
-.product-main img {
-    max-width: 35rem;
+@media (min-width: 768px) {
+    .grid-product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
 }
-    
+.product-main img {
+    width: 100%;
+}
+.form-buy {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.camp {
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 0.5rem;
+    font-family: var(--mainfont);
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.quantity {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.button {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--mainfont);
+}
