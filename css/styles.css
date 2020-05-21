@@ -167,6 +167,13 @@ main h1 {
 }
 
 /** Product **/
+.expand {
+    display: flex;
+    flex-direction: column;
+}
+.expand main {
+    flex: 1;
+}
 @media (min-width: 768px) {
     .grid-product {
         display: grid;
